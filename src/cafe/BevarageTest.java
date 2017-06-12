@@ -13,7 +13,7 @@ package cafe;
 public class BevarageTest {
     public static void main(String[] args){
 
-        CaffeeinBevarageWithHook d1  = new CoffeeWithHook();
+        CaffeeinBevarage d1  = new Tea();
         
         d1.prepareRecipe();
     }

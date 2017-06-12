@@ -17,11 +17,17 @@ public abstract class CaffeeinBevarage {
     
     public abstract void addCondiments();
     
+    public boolean customerWantsCondiments(){
+        return true;
+    }
+    
     public void prepareRecipe(){
         
         boilWater();
         brew();
-        addCondiments();
         pourinCup();
+        if(customerWantsCondiments()){
+            addCondiments();
+        }
     }
 }
